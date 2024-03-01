@@ -1,0 +1,70 @@
+<!--
+#1
+
+HTTP stands for hyper text transfer protocol. It helps fetch resources like HTML documents.
+The different HTTP request methods are GET, PUT, POST, PATCH, and DELETE. 
+
+Get - retrieves data
+Post - submits something to a resource 
+Put - updates everything for a resource
+Patch - modifies a resource
+Delete - deletes a resource
+
+#2
+
+An API is an application programming interface. It helps different parts of a program or computer communicate with each other
+JSON is JavaScript Object Notation, and it helps store temporary data. 
+
+#3
+
+AJAX is aysnchronous javascript and XML. It is a technique for loading data of a webpage without needing to reload it. 
+Asynchronous Code allows code to run in the background without getting in the way of the execution of other pieces of code. 
+
+
+#4
+
+-->
+
+<html>
+    <head>
+        <h1> JSON work </h1>
+    </head>
+        <script>
+    
+    $(document).ready(function (){
+       $.ajax({
+            type:'GET',
+            url: 'db.json',
+            success: function(data)
+            {
+                console.log(data, JSON.stringify(data))
+            }
+        })
+ 
+
+        $.ajax({
+            type: 'POST',
+            url: 'db.json',
+            data: data,
+            success: function(data)
+            {
+                console.log('POST:', JSON.stringify(data))
+        
+            }
+        })
+
+
+        $.ajax({
+            type: 'PUT',
+            url: 'db.json',
+            data: data,
+            success: function(data)
+            {
+                console.log('PUT:', JSON.stringify(data));
+            }
+        })
+
+    })
+    </script>
+
+</html>
