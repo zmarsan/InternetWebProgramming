@@ -1,0 +1,10 @@
+#2: What are some examples of how PHP and JavaScript are alike and how they differ?
+
+PHP and JS are both object-oriented languages, and have similar syntax. They differ as PHP is multi-threaded language whereas JavaScript is single-threaded.
+
+#3 Define MVC, what are the responsibilities of each piece?
+
+MVC stands for model, view, and controller. These three categories handle different aspects of an application. 
+The model component deals with data-related logic. 
+The view generates a user interface for the user.
+The controller enables the interconnection between views and model. 
